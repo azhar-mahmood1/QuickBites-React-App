@@ -1,0 +1,98 @@
+/* styles.css */
+.background-container {
+  background-image: url('/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .background-container {
+  height: 100vh;
+  position: relative;
+} /* Adjust the height as needed */
+}
+.header-contents{
+  
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 200px;
+    left: 8.5vw;
+}
+.header-contents h2{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: max(4.0vw,22px);
+    animation: fadeIn 2.5s;
+    color: white;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header-contents p{
+    font-size: 1vw;
+    max-width: 70%;
+    color: white;
+}
+.paragraph {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.paragraph.animate {
+  opacity: 1;
+}
+.dot-container {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ffbe33; /* yellow */
+}
+.header-contents button{
+    background-color: #ffbe33;
+    border: none;
+    font-weight: 500;
+    color: white;
+    padding: 1vw 2.3vw;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.header-contents button:hover{
+    background-color: tomato;
+}
+@media (max-width:1050px) {
+  .header-contents{
+    max-width: 45%;
+  }
+}
+@media (max-width:750px) {
+ 
+  .header-contents{
+    max-width: 65%;
+  }
+  .header-contents p{
+    display: none;
+  }
+  .header-contents button {
+    padding: 2vw 4vw;
+  }
+}
