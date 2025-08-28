@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Review.css";
 import Adam from '../../assets/Adam.jpg';
-import Katherine from '../../assets/katherine.jpg';
+import Katherine from '../../assets/Katherine.jpg';
 import mark from '../../assets/mark.jpg';
 
 const Review = () => {
