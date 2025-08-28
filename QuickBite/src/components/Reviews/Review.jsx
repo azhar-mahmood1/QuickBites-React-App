@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Review.css";
 import Adam from '../../assets/Adam.jpg';
-import Katherine from '../../assets/Katherine.jpg';
+import katherine from '../../assets/katherine.jpg';
 import mark from '../../assets/mark.jpg';
 
 const Review = () => {
@@ -22,7 +22,7 @@ const Review = () => {
           </div>
         </div>
         <div className="card">
-          <img src={Katherine} width="250px" alt="user" />
+          <img src={katherine} width="250px" alt="user" />
           <div className="card-container">
             <span><i className="ri-double-quotes-l"></i></span>
             <div className="card-details">
